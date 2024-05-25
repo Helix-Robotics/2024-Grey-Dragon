@@ -38,9 +38,9 @@ public class Robot extends TimedRobot {
    * Use the appropriate other class if you are using different controllers.
    */
   CANSparkBase leftRear = new CANSparkMax(1, MotorType.kBrushed);
-  CANSparkBase leftFront = new CANSparkMax(2, MotorType.kBrushed);
-  CANSparkBase rightRear = new CANSparkMax(3, MotorType.kBrushed);
-  CANSparkBase rightFront = new CANSparkMax(4, MotorType.kBrushed);
+  CANSparkBase leftFront = new CANSparkMax(3, MotorType.kBrushed);
+  CANSparkBase rightRear = new CANSparkMax(5, MotorType.kBrushed);
+  CANSparkBase rightFront = new CANSparkMax(7, MotorType.kBrushed);
 
   /*
    * A class provided to control your drivetrain. Different drive styles can be passed to differential drive:
@@ -57,17 +57,17 @@ public class Robot extends TimedRobot {
    * Both of the motors used on the KitBot launcher are CIMs which are brushed motors
    */
   CANSparkBase m_launchWheel = new CANSparkMax(6, MotorType.kBrushed);
-  CANSparkBase m_feedWheel = new CANSparkMax(5, MotorType.kBrushed);
+  CANSparkBase m_feedWheel = new CANSparkMax(2, MotorType.kBrushed);
 
   /**
    * Roller Claw motor controller instance.
   */
-  CANSparkBase m_rollerClaw = new CANSparkMax(8, MotorType.kBrushed);
+  CANSparkBase m_rollerClaw = new CANSparkMax(4, MotorType.kBrushed);
   /**
    * Climber motor controller instance. In the stock Everybot configuration a
    * NEO is used, replace with kBrushed if using a brushed motor.
    */
-  CANSparkBase m_climber = new CANSparkMax(7, MotorType.kBrushless);
+  CANSparkBase m_climber = new CANSparkMax(8, MotorType.kBrushless);
 
     /**
    * The starter code uses the most generic joystick class.
