@@ -406,11 +406,11 @@ public class Robot extends TimedRobot {
      */ 
     if(m_manipController.getRawButton(3))
     {
-      m_rollerClaw.set(CLAW_OUTPUT_POWER);
+      m_rollerClaw.set(-CLAW_OUTPUT_POWER);
     }
     else if(m_manipController.getRawButton(4))
     {
-      m_rollerClaw.set(-CLAW_OUTPUT_POWER);
+      m_rollerClaw.set(CLAW_OUTPUT_POWER);
     }
     else
     {
